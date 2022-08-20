@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="Style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Mon évolution</title>
+
+        <!-- Titre de l'ONGLET-->
+
+    </head>
+
+    <body>  <!-- Le corps de la page avec toutes les données -->
+
+                <!-- Début de la présentation de page -->
+    <div class="logo_y">    
+        <p><img src="BDD_images/logo_y.png" class="signature" alt="Un logo avec la lettre Y"/> </p>
+        <p>Yohan.Grenier<br/>Yohan.Grenier<br/>Yohan.Grenier<br/>Yohan.Grenier<br/>Yohan.Grenier</p>
+        <p class="dessous_signature">Yohan.GrenierYohan.Grenier</p>
+    </div>
+
+    <header>                    
+
+        <div class="en_tete">
+        <h1><strong>MON ÉVOLUTION</strong></h1>
+
+        <p>
+            <a href="BDD_images/image_developpeur.png"><img src="BDD_images/image_developpeur_mini.png" alt="Un developpeur entrain de coder" title="C'est presque moi! En pas pareil..." /></a> <br/>
+            <em>Vous souhaitez voir cette image en plus grand? Cliquez dessus!</em>
+        </p>
+                 
+        <h2 class="sommaire">Sommaire: <br/>
+            
+                <a href="#premisses_HTML">Les prémisses du HTML</a> <br/>
+                <a href="#premisses_CSS">Les prémisses du CSS</a> <br/>
+                                <!-- <li> prochain cours </li> -->
+                <a href="#informations_complementaires">Informations complémentaires</a>
+        </h2>
+        </div>
+
+    </header>                          <!-- Fin de la présentatrion de page -->
+
+
+    <section> 
+        <nav>
+            <h2 id="premisses_HTML">Les prémisses du HTML<cite><em> - Juin 2022</em></cite></h2>
+        </nav>
+            <ol> 
+                <li><a href="#balises"> Mémo balises </a></li>
+                <li><a href="#titres"> Mémo tires </a></li>
+                <li><a href="#format_image"> Formats d'image </a></li>
+            </ol>
+
+
+            <h3 id="balises">Mémo balises</h3> 
+            <article>
+                <h4>Paires <strong>< *></strong><em>mot d'exemple</em><strong>< */></strong> :</h4>
+                        <ul>
+                            <li><strong>< em > < em /> </strong>= Fait ressortir le texte (style avec CSS)</li>
+                            <li><strong>< strong > < strong /> </strong>= Fait un peu plus ressortir le texte (style avec CSS)</li>
+                            <li><strong>< mark > < mark /> </strong>= Fait ENCORE plus ressortir le texte</li>
+                            <li><strong>< p > < p /> </strong>= paragraphe</li>    
+                            <li><strong>< a ><em>href ="mon lien">le titre de mon lien</em>< a /> </strong>= Envoyer vers ( lien/téléchargement/mot id )</li>
+                            <li><strong>< span class="introduction"> <em>mon mot/ma phrase</em> </ span></strong> = permet d'ajouter une class, donc un effet de style <br/>
+                                La classe peut-être insérée dans les <strong>h1/p/img/span/div </strong><cite><a href="#informations_complementaires">Petite nuance entre <strong>id=""</strong> et <strong>class=""</strong></a></cite><br/>
+                                Sur le calque CSS indiquer: <strong>.introduction</strong></li>
+                            <li><strong>< div><em>mon bloc/paragraphe</em></ div></strong> = comme<em>< span></em> mais pour un paragraphe ou un bloc</li>
+                       </ul>
+
+                <h4>Orphelines < */> :</h4>
+                        <ul>
+                            <li><strong>< br /></strong> = saut à la ligne</li>
+                            <li><strong>< img /></strong> = ajouter une image</li>
+                        </ul>
+                </article>
+
+
+            <h3 id="titres">Mémo titres</h3>
+                <article> 
+                    <ul> 
+                        <li><strong>h1 </strong>= Titre super important</li>
+                        <li><strong>h2 </strong>= Titre important</li>
+                        <li><strong>h3 </strong>= Titre un peu moins important (sous-titre)</li>
+                        <li><strong>h4 </strong>= Titre pas trop important</li>
+                        <li><strong>h5 </strong>= Titre pas important</li>
+                        <li><strong>h6 </strong>= Titre vraiment pas important du tout</li>
+                    </ul>
+                </article>
+
+            <h3 id="format_image">Formats d'image adaptés</h3>
+                <article>
+                    <ul>
+                        <li><strong>Une photo</strong> : utilisez un JPEG</li>
+                        <li><strong>N'importe quel graphique avec peu de couleurs (moins de 256)</strong> : utilisez un PNG 8 bits, ou éventuellement un GIF</li>  
+                        <li><strong>N'importe quel graphique avec beaucoup de couleurs </strong>: utilisez un PNG 24 bits</li>
+                        <li><strong>Une image animée</strong> : utilisez un GIF animé</li>
+                    </ul>
+                </article>
+
+            <br/>
+
+        </section>
+
+  <div class="partie_css">      <section>
+
+        <nav>
+            <h2 id="premisses_CSS">Les prémisses du CSS<cite><em> - Juin 2022</em></cite></h2>
+        </nav>
+
+            <ol> 
+                <li><a href="#cibler_style">Cibler les parties pour appliquer un style </a></li>
+                <li><a href="#font">Modifier le format de texte</a></li>
+                <li><a href="#effets_visuels">Ajouter des effets visuels</a></li>
+
+                <!-- Ajouter au sommaire CSS-->
+            </ol>
+
+            
+            <h3 id="cibler_style">Cibler les parties pour appliquer un style</h3> 
+
+                <h4>Code des appels: <cite><a href="https://www.w3.org/Style/css3-selectors-updates/WD-css3-selectors-20010126.fr.html#selectors">Tous les sélecteurs</a></cite></h4>
+                <article>
+                        <ul>
+                            <li><strong>p {color: blue;}</strong> = Tous les paragraphes en bleus </li>
+                            <li><strong>h1, em {color: red;}</strong> = Tous les h1 + tous les em en rouge</li>
+                            <li><strong>h2 strong {color: grey;}</strong> = Tout le texte strong <strong>dans</strong> le compartiment <strong>h2</strong></li>
+                            <li><strong>h3 + p</strong> = Séléctionne le premier paragraphe après in titre h3</li>
+                            <li><strong>.</strong><em>introduction</em> = Tous ce qui ce trouve dans le <strong>class="introduction" - </strong><cite><a href="#balises">Voir Balises paires en HTML<em>< pan> / < div></em></a></cite></li>
+                            <li><strong>#</strong><em>introduction</em> = Tous ce qui se trouve dans l'<strong>id="introduction"</strong></li>
+                            <li><strong>a[title] {font: bolt;}</strong> = Tous les lien < a> avec un attribut <em>title</em></li>
+                            <li><strong>a[title="Cliquez ici"] {font: bolt;}</strong> = Tous les lien < a> avec un attribut <em>title</em> nommé spécifiquement</li>
+                            <li><strong>a[title<strong>*</strong>="ici"] {font: bolt;}</strong> = Tous les lien < a> avec un attribut <em>title</em> contenant le mot "ici"</li>
+                       </ul>
+                </article>
+
+            <h3 id="font">Modifier les formats de texte</h3>
+
+                <h4>La taille:
+                <article>
+                    <ul>
+                        <li>p {<strong>font-size: 14px;}</strong> = Modifie la taille de tous les paragraphes à 14 pixels<br/>
+                            <em>Utiliser <strong>1.3em</strong> pour avoir une taille qui s'adapte aux différents écrans</em></li>
+                        <li>h1 {<strong>font-size: x-large}</strong> = Tous les titres h1 en très grand</li>
+                    </ul>
+                </article>
+
+                <h4>La police :</h4>
+                <article>
+                    <ul>
+                        <li>* {<strong>font-family: Arial, "New roman", Verdana;}</strong> = TOUT le texte s'affichera en Arial, si pas installé se sera New Roman, sinon Verdana <cite><a href="#informations_complementaires"> Nuance pour les polices en deux mots</a></cite> </li>
+                        <li>strong {<strong>font-weight: bolt;}</strong> = Tous les strong seront en gras (bolt ou normal)</li>
+                        <li>cite {<strong>font-style: italic;}</strong> = Toutes les citations seront en italiques</li>
+                        <li>.souligne {<strong>decoration: underline;}</strong> = Souligne tous les texte avec la class <em>.souligne</em></li>
+                    </ul>
+                </article>
+
+                <h4>L'alignement :<cite><a href="#informations_complementaires"> Toutes les balises ne sont pas concernées</a></cite></h4>
+                <article>
+                    <ul>
+                        <li>h1 {<strong>text-align: left}</strong> = Les titres h1 seront alignés à gauche (c'est le réglage par défaut)</li>
+                        <li>.signature <strong>{ text-align: right;}</strong> = La class <em>.signature</em> sera alignée à droite </li>
+                        <li><strong>center</strong> = Texte sera centré </li>
+                        <li><strong>justify</strong> = Le texte prend toute la largeur</li>
+                    </ul>
+                </article>
+
+
+            <h3 id="effets_visuels">Ajouter des effets visuels</h3>
+
+                <h4>Les effets:</h4>
+                <article>
+                    <ul>
+                        <li><strong>box-shadow</strong>: 3px (décal horizontal) 3px (décal vertical) 6px (adoucissement) black = Créer une ombre en cadre </li>
+                        <li><strong>text-shadow</strong> 4px 4px 12px white = comme la box sur le texte</li>
+                        <li><strong>border</strong> 3px (largeur) black inset (style de trait)<br/>
+                            <strong>borden-bottom</strong> pour faire que le bas par ex<br/>
+                            <strong>border-radius</strong> 12px (arrondi) / 15px (optionnel si on souhaite une élipse) </li>
+
+                    </ul>
+                </article>
+
+        </section> </div>
+
+
+
+
+
+        <footer>           <!-- /!\ Informations complémentaires à toujours positionner en dernier /!\ -->
+
+        
+            <H2 id="informations_complementaires">Informations complémentaires </H2>
+            <p>
+                <ul>
+                    <li><strong>id=""</strong> = n'est utilisable que pour désigner un unique endroit</li>
+                    <li><strong>class=""</strong> = peut être utilisé à plusieurs endroits</li>
+                    <li>p {<strong>font-family: Arial, "New roman", Verdana;}</strong>, bien ajouter les <strong>" "</strong> pour les polices avec deux mots</li>
+                    <li>Alignement impossible pour <strong>< span>  , < a>  , < em>  , < strong>, etc...</strong> L'alignement ne fonctionne que sur des balises de type block ( <strong>< p>  , < div>  , < h1>  , < h2>, etc…</strong>)-> on ne peut pas modifier l'alignement de quelques mots au milieu d'un paragraphe ! En général, c'est le paragraphe entier qu'il vous faudra aligner</li>
+                    
+                    <!-- Ajouter des informations/nuances/nota bene -->
+
+                </ul>
+            </p>
+        
+        </footer>
+
+    </body>
+</html>
+
